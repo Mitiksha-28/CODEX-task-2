@@ -1,0 +1,28 @@
+/*Develop a program that uses a while loop to continuously prompt the user for a password until the correct password is entered.*/
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    int t;
+    cin>>t;
+    while (t--){
+    string correct_pass = "codex";
+
+    while (true) {
+        string pass;
+        cin >>pass;
+
+        
+        if (pass == correct_pass) {
+            cout<<"Password correct."<<endl;
+            break;
+        } 
+        else {
+            cout<<"Password incorrect. Try again."<<endl;
+            break;
+            }
+    }
+}
+    return 0;
+}
