@@ -1,6 +1,5 @@
-/* Create a program that uses a loop to find and display the first 5 prime numbers. Use the break statement to exit the loop once all prime numbers are found.*/
+/*Create a program that uses a loop to find and display the first 5 prime numbers. Use the break statement to exit the loop once all prime numbers are found.*/
 #include <iostream>
-#include <string>
 using namespace std;
 
 int main() {
