@@ -1,0 +1,15 @@
+/*Write a program that uses manipulators to format and display the current date and time.*/
+#include <iostream>
+#include <iomanip>
+#include <ctime>
+using namespace std;
+
+int main() {
+    putenv(const_cast<char*>("TZ=Asia/Kolkata"));
+    time_t currentTime = time(nullptr);
+
+    
+    cout<<"Current Date and Time in India: "<<put_time(localtime(&currentTime), "%Y-%m-%d %H:%M:%S")<<endl;
+
+    return 0;
+}
