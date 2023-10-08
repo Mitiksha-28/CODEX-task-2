@@ -1,0 +1,28 @@
+/* Create a program that uses a loop to find and display the first 5 prime numbers. Use the break statement to exit the loop once all prime numbers are found.*/
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    int lower_limit;
+    cin>>lower_limit;
+    int upper_limit;
+    cin>>upper_limit;
+    int count=0;
+    for(int i=lower_limit; i<upper_limit; i++){
+        for(int j=2; j<i; j++){
+            if(i%j==0){
+                break;
+            }
+            else{
+                cout<<i<<" ";
+                count =count+1;
+                break;
+            }
+        }
+        if(count==5){
+                break;
+    }
+}
+    return 0;
+}
